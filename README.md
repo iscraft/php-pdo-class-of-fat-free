@@ -690,4 +690,6 @@ require("s/pdo.php");
 //$db = Flight::db();
 $db = new SQL('pgsql:host=localhost;port=5432;dbname=postgres','Administrator','123456');
 
+//detail
+https://fatfreeframework.com/3.6/sql
 ```
