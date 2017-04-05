@@ -1,4 +1,4 @@
-//init   
+init   
 ```
 require("s/pdo.php");   
 //$db = new DB(ROOT_PATH.'/sqlite/blog.php');   
@@ -6,7 +6,7 @@ require("s/pdo.php");
 //$db = Flight::db();   
 $db = new SQL('pgsql:host=localhost;port=5432;dbname=postgres','Administrator','123456');   
 ```
-//use   
+use   
 ```
 $db->row("select * from test where id='1'");   
 print_r ($db);   
@@ -15,16 +15,16 @@ print_r ($db);
 echo $db->count();   
 echo $db->lastInsertId();   
 ```
-//base info   
+base info   
 ```
 echo $db->driver();   
 echo $db->version();   
 echo $db->name();   
 print_r ($db->schema("test"));   
 ```
-//log time   
+log time   
 ```
 $stamp=TRUE   
 ```
-//detail   
+detail   
 https://fatfreeframework.com/3.6/sql   
