@@ -9,9 +9,10 @@ $db = new SQL('pgsql:host=localhost;port=5432;dbname=postgres','Administrator','
 $db->row("select * from test where id='1'");   
 print_r ($db);   
 $db->exec("select * from test where id='1'");   
-print_r ($db);   
+print_r ($db);    
+echo $db->lastInsertId();   
 
-//base info   
+//base info    
 echo $db->driver();   
 echo $db->version();   
 echo $db->name();   
