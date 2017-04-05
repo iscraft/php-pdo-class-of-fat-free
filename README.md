@@ -682,14 +682,4 @@ function row($cmds,$args=NULL,$ttl=0,$log=TRUE,$stamp=FALSE) {
 	}
 
 }
-
-//demo
-require("s/pdo.php");
-//$db = new DB(ROOT_PATH.'/sqlite/blog.php');
-//Flight::register('db', 'SQL', array(ROOT_PATH.'/sqlite/blog.php'));
-//$db = Flight::db();
-$db = new SQL('pgsql:host=localhost;port=5432;dbname=postgres','Administrator','123456');
-
-//detail
-https://fatfreeframework.com/3.6/sql
 ```
