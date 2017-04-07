@@ -1,7 +1,7 @@
 <?php
 
 /*
-	@license	GNU General Public License http://www.gnu.org/licenses
+@license	GNU General Public License http://www.gnu.org/licenses
 */
 //namespace DB;
 //! PDO wrapper
