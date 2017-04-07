@@ -1,5 +1,3 @@
-# pdo
-```php	
 <?php
 
 /*
@@ -682,4 +680,3 @@ function row($cmds,$args=NULL,$ttl=0,$log=TRUE,$stamp=FALSE) {
 	}
 
 }
-```
