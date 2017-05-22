@@ -693,6 +693,7 @@ function row($cmds,$args=NULL,$ttl=0,$log=TRUE,$stamp=FALSE) {
 			$options=[];
 		if (isset($parts[0]) && strstr($parts[0],':',TRUE)=='mysql')
 			$options+=[\PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf8'];
+			$options+=[\PDO::ATTR_EMULATE_PREPARES=>'false'];
 		$this->pdo=new \PDO($dsn,$user,$pw,$options);
 		$this->engine=$this->pdo->getattribute(\PDO::ATTR_DRIVER_NAME);
 	}
