@@ -10,8 +10,16 @@ use
 ```php
 $db->row("select * from test where id='1'");   
 print_r ($db);   
-$db->exec("select * from test where id='1'");   
+
+$db->exec("select * from test");   
 print_r ($db);  
+
+$db->one("select name from test where id='1'");   
+print_r ($db); 
+
+$db->column("select name from test");   
+print_r ($db);
+
 echo $db->count();   
 echo $db->lastInsertId();   
 ```
