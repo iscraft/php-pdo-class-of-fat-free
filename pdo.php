@@ -80,6 +80,7 @@ function stringify($arg,array $stack=NULL) {
 			return var_export($arg,TRUE);
 	}
 }
+//get row
 function row($cmds,$args=NULL,$ttl=0,$log=TRUE,$stamp=FALSE) {
 	$tag='';
 	if (is_array($ttl))
